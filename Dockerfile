@@ -93,8 +93,7 @@ RUN set -eux; \
     python3 -c "import yaml; print('PyYAML:', yaml.__version__)"; \
     kubectl version --client; \
     helm version --short; \
-    argocd version --client; \
-    aws --version
+    argocd version --client
 
 USER runner
 
